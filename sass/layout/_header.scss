@@ -9,16 +9,26 @@
   display: flex;
   align-items: center;
 }
+.header__section {
+  position: relative;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
 
 .nav {
-  display: flex;
+  display:none;
+  // display: flex;
   align-items: center;
   margin-left: 93px;
 }
 
 .nav-all {
+  outline: 1px solid red;
+  width: 100%;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  
 }
 
 .nav__link {
@@ -120,10 +130,48 @@
 }
 
 .nav-auth {
-  display: flex;
+display: none;
+  // display: flex;
   margin-left: auto;
 }
 
 .nav-auth__item + .nav-auth__item {
   margin-left: 50px;
 }
+
+// .menu-mob .icon-close {
+//   display: none;
+// }
+// .menu-mob.is-open .icon-close {
+//   display: none;
+// }
+
+// .menu-mob.is-open .icon-line {
+//   display: none;
+// }
+
+.menu-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  background-color: aqua;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  padding-left: 40px;
+  font-size: 40px;
+  
+
+}
+
+
+
+
+
+
+
+
+
+
+

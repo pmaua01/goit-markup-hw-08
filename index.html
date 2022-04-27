@@ -15,10 +15,38 @@
 
     
    
-    <!-- <header class="header">
+    <header class="header">
+        <section class="section header__section">
         <div class="container header__container">
         <nav class="nav-all">
+            
             <a href="./" class="logo"><span class="logo__span">Web</span>Studio</a>
+          
+            <button type="button" class="mob-button__open">
+                <svg class="menu-mob__line" width="40px" height="40px"
+                aria-label="Переключатель мобильного меню"
+                aria-expanded="false"
+                aria-controls="menu-container">
+                    <use class="icon-line" href="./images/icons.svg#icon-menu_line"></use>
+                    <!-- <use class="icon-close" href="./images/icons.svg#icon-menu_close"></use> -->
+                </svg>
+                
+            </button>
+            <div class="menu-container" id="menu-container">
+                <div class="mob-nav">
+                    <button type="button" class="mob-button-close">
+                        <svg class="mob-button-close_icon" width="40px" height="40px">
+                            <use href="./images/icons.svg#icon-menu_close"></use>
+                        </svg>
+                    </button>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="mob-link"></div>
+            </div>
         <ul class="nav list">
             <li class="nav__studio"><a href="./index.html" class="nav__link current">Студия</a></li>
             <li class="nav__studio"><a href="./portfolio.html" class="nav__link">Портфолио</a></li>
@@ -43,8 +71,9 @@
                     +38 096 111 11 11</a></li>
         </ul>  
         </div>
+        </section>
         
-    </header> -->
+    </header>
     <main>
 
         
@@ -417,6 +446,7 @@
 
             <label class="modal__chek"><input type="checkbox" name="accept" class="modal__checkbox">
                 <span class="modal__check-icon"></span>
+               
                  Соглашаюсь с рассылкой и принимаю <a href="./" class="accept">Условия договора</a></label>
 
             <button type="submit" class="button modal__button">Отправить</button>
@@ -431,6 +461,7 @@
     
 
     <script src="./js/modal.js"></script> 
+    <script src="./js/menu.js"></script>
 
 </body>
 </html>
