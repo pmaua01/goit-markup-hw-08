@@ -1,0 +1,62 @@
+/* section what we do */
+.what__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.7;
+  text-align: center;
+}
+
+.what__list {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.what__item + .what__item {
+  margin-left: 30px;
+}
+
+/* what we do transparent box */
+
+.what__item.transparent {
+  position: relative;
+}
+
+.what__transparent-box {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  /* outline: 1px solid red; */
+  background: rgba(47, 48, 58, 0.8);
+
+  width: 100%;
+  height: 70px;
+
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.1;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+
+.what__transparent-box p {
+  margin: 0;
+  padding-top: 27px;
+  padding-bottom: 27px;
+}
+
+.what {
+  padding-top: 0px;
+}
+
+
+.what.section {
+  display: none;
+
+  @media screen and(min-width:1200px) {
+    display:block;
+  }
+}
+

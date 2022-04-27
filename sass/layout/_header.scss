@@ -1,0 +1,129 @@
+/* Header */
+
+.header {
+  /* outline: solid 1px tomato; */
+  border-bottom: solid 1px var(--brd-color);
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  margin-left: 93px;
+}
+
+.nav-all {
+  display: flex;
+  align-items: center;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: var(--main-text-color);
+  transition: var(--cubic);
+
+  &:hover,
+  &:focus {
+    color: var(--acent-color);
+  }
+}
+
+.nav__studio {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+}
+.nav__link .current {
+  color: var(--acent-color);
+}
+
+/* Blue line current */
+.nav__studio {
+  position: relative;
+  /* outline: 1px solid red; */
+}
+
+.nav__link.current::after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: translate(-0%, 1px);
+
+  content: '';
+  background-color: var(--acent-color);
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+}
+
+.nav-auth__link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  /* outline: 1px solid green; */
+  color: var(--second--text-color);
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  fill: var(--second--text-color);
+
+  transition: color var(--cubic), fill var(--cubic);
+  &:hover,
+  &:focus {
+    color: var(--acent-color);
+    fill: var(--acent-color);
+  }
+}
+
+/* Nav auth icon */
+.nav-auth__item {
+  display: flex;
+  align-items: center;
+}
+
+.nav-auth__icon-mail {
+  --color: currentColor;
+  height: 12px;
+  width: 16px;
+  margin-right: 10px;
+  /* fill: var(--second--text-color); */
+  &:hover,
+  &:focus {
+    fill: var(--acent-color);
+  }
+}
+
+.nav-auth__icon-tel {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  /* fill: var(--second--text-color); */
+}
+
+/* Header-flex */
+
+.nav__studio {
+  /* outline: tomato solid 2px; */
+  margin-right: 50px;
+}
+
+.nav__studio:last-child {
+  margin-right: 0px;
+}
+
+.nav-auth {
+  display: flex;
+  margin-left: auto;
+}
+
+.nav-auth__item + .nav-auth__item {
+  margin-left: 50px;
+}

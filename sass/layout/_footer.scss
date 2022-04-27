@@ -1,0 +1,128 @@
+/* section footer */
+.footer {
+  background-color: var(--main-herofooter-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer__list {
+  /* outline: tomato solid 2px; */
+  margin-top: 20px;
+  font-size: 14px;
+  font-style: normal;
+  & li {
+    margin-bottom: 9px;
+  }
+  & li:last-child {
+    margin-bottom: 0px;
+  }
+}
+
+.footer__address {
+  color: var(--white-color);
+  @extend %address;
+
+  &:hover,
+  &:focus {
+    color: var(--acent-color);
+  }
+}
+
+.footer__email {
+  color: rgba(255, 255, 255, 0.6);
+  @extend %address;
+  &:hover,
+  &:focus {
+    color: var(--acent-color);
+  }
+}
+
+.footer__tel {
+  color: rgba(255, 255, 255, 0.6);
+  @extend %address;
+  &:hover,
+  &:focus {
+    color: var(--acent-color);
+  }
+}
+
+/* footer icon */
+.footer-icon__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-color);
+  margin-bottom: 20px;
+}
+
+.icon-grey {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-icon {
+  fill: var(--white-color);
+  margin-left: 70px;
+  /* margin-top: 12px; */
+}
+
+.footer__container {
+  display: flex;
+  align-items: baseline;
+}
+
+/* footer signaure */
+
+.signature {
+  display: flex;
+  color: var(--white-color);
+  margin-left: auto;
+  align-items: flex-end;
+}
+
+.signature__sign {
+  width: 358px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.signature__input {
+  margin-top: 20px;
+  padding-left: 16px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 100%;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: var(--main-herofooter-color);
+
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  &::placeholder {
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.button-sign__icon {
+  margin-left: 10px;
+  fill: var(--white-color);
+}
+
+.signature__button {
+  margin-left: 12px;
+}
+
+.footer__logo {
+  color: var(--white-color);
+}

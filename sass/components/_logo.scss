@@ -1,0 +1,8 @@
+.logo {
+  color: var(--main-text-color);
+  @extend %logofont;
+}
+.logo__span {
+  color: var(--acent-color);
+  @extend %logofont;
+}

@@ -1,0 +1,6 @@
+@mixin fontstyle($weight, $size, $height, $aligin: center) {
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $height;
+  text-align: $aligin;
+}
