@@ -76,8 +76,11 @@
 .team-icon__action {
   display: flex;
   margin: auto;
-  // align-items: center;
-  // justify-content: center;
+  @media screen and (max-width:767px) {
+    align-items: center;
+    justify-content: center;
+  }
+  
 }
 
 .team-icon__icon-button {

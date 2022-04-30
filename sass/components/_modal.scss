@@ -28,6 +28,7 @@
 }
 
 .modal {
+  position: relative;
   @media screen and (min-width:768px){
   position: absolute;
   top: 50%;
@@ -200,7 +201,7 @@
 
 .accept {
   // margin-left: 7px;
-  margin-left: 5px;
+  margin-left: 4px;
   color: var(--acent-color);
  
 }
