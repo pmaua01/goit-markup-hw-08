@@ -16,28 +16,80 @@
 </head>
 
 <body>
-    <!-- <header class="header">
+<header class="header">
+    <section class="section header__section">
         <div class="container header__container">
             <nav class="nav-all">
+
                 <a href="./" class="logo"><span class="logo__span">Web</span>Studio</a>
+
+                <button type="button" class="mob-button__open" data-mobile-open>
+                    <svg class="menu-mob__line" width="40px" height="40px" aria-label="Переключатель мобильного меню"
+                        aria-expanded="false" aria-controls="menu-container">
+                        <use class="icon-line" href="./images/icons.svg#icon-menu_line"></use>
+                        <!-- <use class="icon-close" href="./images/icons.svg#icon-menu_close"></use> -->
+                    </svg>
+
+                </button>
+                <div class="menu-container is-hidden" id="menu-container" data-mobile>
+                    <div class="menu-position">
+                        <div class="mob-nav">
+                            <button type="button" class="mob-button__close" data-mobile-close>
+                                <svg class="mob-button-close_icon" width="40px" height="40px">
+                                    <use href="./images/icons.svg#icon-menu_close"></use>
+                                </svg>
+                            </button>
+                            <ul class="mobnav list">
+                                <li class="mobnav__studio"><a href="./index.html" class="mobnav__link ">Студия</a></li>
+                                <li class="mobnav__studio"><a href="./portfolio.html" class="mobnav__link">Портфолио</a>
+                                </li>
+                                <li class="mobnav__studio"><a href="" class="mobnav__link">Контакты</a></li>
+                            </ul>
+                        </div>
+                        <div class="mob-link">
+                            <ul class="mobnav-auth list">
+                                <li class="mobnav-auth__item">
+
+                                    <a href="tel:+380961111111" class="mobnav-auth__link--tel">
+                                        +38 096 111 11 11</a>
+                                </li>
+                                <li class="mobnav-auth__item">
+                                    <a href="mailto:info@devstudio.com" class="mobnav-auth__link">
+                                        info@devstudio.com</a>
+
+                                </li>
+                            </ul>
+
+                            <ul class="mobnav-sociallist list">
+                                <li class="mobnav-sociallist__list">Instagram</li>
+                                <li class="mobnav-sociallist__list">Twitter</li>
+                                <li class="mobnav-sociallist__list">Facebook</li>
+                                <li class="mobnav-sociallist__list">LinkedIn</li>
+                            </ul>
+
+                        </div>
+                    </div>
+
+                </div>
                 <ul class="nav list">
-                    <li class="nav__studio"><a href="./index.html" class="nav__link ">Студия</a></li>
-                    <li class="nav__studio"><a href="./portfolio.html" class="nav__link current">Портфолио</a></li>
+                    <li class="nav__studio"><a href="./index.html" class="nav__link current">Студия</a></li>
+                    <li class="nav__studio"><a href="./portfolio.html" class="nav__link">Портфолио</a></li>
                     <li class="nav__studio"><a href="" class="nav__link">Контакты</a></li>
                 </ul>
+
             </nav>
+
             <ul class="nav-auth list">
-    
+
                 <li class="nav-auth__item">
-    
-                                      <a href="mailto:info@devstudio.com" class="nav-auth__link">
+                    <a href="mailto:info@devstudio.com" class="nav-auth__link">
                         <svg class="nav-auth__icon-mail">
                             <use href="./images/icons.svg#icon-mail"></use>
                         </svg>info@devstudio.com</a>
-    
+
                 </li>
                 <li class="nav-auth__item flex">
-                   
+
                     <a href="tel:+380961111111" class="nav-auth__link">
                         <svg class="nav-auth__icon-tel">
                             <use href="images/icons.svg#icon-tel"></use>
@@ -45,9 +97,11 @@
                         +38 096 111 11 11</a>
                 </li>
             </ul>
+
         </div>
-    
-    </header> -->
+    </section>
+
+</header>
     <main>
         <section class="portfolio section">
         <div class="container">
@@ -217,8 +271,9 @@
 
     </main>
    
-    <!-- <footer class="footer">
-        <div class="container footer__container">
+<footer class="footer">
+    <div class="container footer__container">
+        <div class="footer-top">
             <div class="footer__link">
                 <a href="./" class="logo footer__logo"><span class="logo__span">Web</span>Studio</a>
                 <address>
@@ -232,7 +287,7 @@
             </div>
             <div class="footer-icon">
                 <p class="footer-icon__title">присоединяйтесь</p>
-    
+
                 <ul class="team-icon__action list">
                     <li class="team-icon__item"><a class="team-icon__icon-button icon-grey">
                             <svg class="icon-team-inst" width="20px" height="20">
@@ -255,25 +310,26 @@
                             </svg>
                         </a></li>
                 </ul>
-    
             </div>
-    
-            <form class="signature">
-    
-                <label class="signature__sign">подпишись на рассылку
-                    <input type="email" name="email" class="signature__input" placeholder="E-mail">
-                </label>
-                <button class="button signature__button">Подписаться
-                    <svg class="button-sign__icon" width="24" height="24">
-                        <use href="./images/icons.svg#icon-modal-send"></use>
-                    </svg>
-                </button>
-            </form>
         </div>
-    
-    
-    
-    </footer> -->
+
+
+        <form class="signature">
+
+            <label class="signature__sign">подпишись на рассылку
+                <input type="email" name="email" class="signature__input" placeholder="E-mail">
+            </label>
+            <button class="button signature__button">Подписаться
+                <svg class="button-sign__icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-modal-send"></use>
+                </svg>
+            </button>
+        </form>
+    </div>
+
+
+
+</footer>
     
     </body>
     

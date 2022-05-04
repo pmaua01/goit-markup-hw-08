@@ -64,8 +64,10 @@
 }
 
 .footer-icon {
-  
+  @media screen and (max-width:1200px) {
   text-align: center;
+  }
+  
  
   fill: var(--white-color);
   @media screen and (min-width:1200px) {
@@ -78,6 +80,10 @@
 }
 
 .footer__container {
+  @media screen and (min-width:768px) and (max-width:1200px){
+  margin: auto;
+  width: 768px;
+  }
 @media screen and (min-width:1200px){
   display: flex;
 
@@ -117,8 +123,10 @@
 .signature {
   // outline: 1px solid white;
   color: var(--white-color);
-
+@media screen and (max-width:1200px) {
   text-align: center;
+}
+  
   @media screen and (max-width:767px){
     margin-top: 60px;
   }

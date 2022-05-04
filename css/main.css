@@ -441,30 +441,76 @@ img {
 
 /* hero */
 .hero {
-  max-width: 1600px;
-  height: 600px;
   margin-left: auto;
   margin-right: auto;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/overlay.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/overlay.jpg);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/mobile.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile.jpg);
   background-color: var(--main-herofooter-color);
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 118px;
+  padding-bottom: 118px;
+}
+
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/mobile2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile2x.jpg);
+  }
+}
+
+@media (min-width: 481px) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/tablet.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet.jpg);
+  }
+}
+
+@media (min-width: 481px) and (min-device-pixel-ratio: 2), (min-width: 481px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 481px) and (min-resolution: 192dpi), (min-width: 481px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/tablet2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet2x.jpg);
+  }
+}
+
+@media (min-width: 769px) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/desktop.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/desktop.jpg);
+    max-width: 1600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
+
+@media (min-width: 769px) and (min-device-pixel-ratio: 2), (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 769px) and (min-resolution: 192dpi), (min-width: 769px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/desktop2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/desktop2x.jpg);
+  }
 }
 
 .hero__title {
   /* outline: tomato solid 2px; */
-  width: 696px;
+  width: 360px;
   color: var(--white-color);
   margin: 0 auto;
   margin-bottom: 30px;
   font-weight: 900;
-  font-size: 44px;
+  font-size: 26px;
   line-height: 1.4;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    width: 696px;
+    font-size: 44px;
+  }
 }
 
 .hero__button {
@@ -1097,8 +1143,13 @@ img {
 }
 
 .footer-icon {
-  text-align: center;
   fill: var(--white-color);
+}
+
+@media screen and (max-width: 1200px) {
+  .footer-icon {
+    text-align: center;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1110,6 +1161,13 @@ img {
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .footer-icon {
     /* margin-top: 12px; */
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .footer__container {
+    margin: auto;
+    width: 768px;
   }
 }
 
@@ -1152,7 +1210,12 @@ img {
 /* footer signaure */
 .signature {
   color: var(--white-color);
-  text-align: center;
+}
+
+@media screen and (max-width: 1200px) {
+  .signature {
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 767px) {
