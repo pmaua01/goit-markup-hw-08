@@ -30,36 +30,35 @@
   // display: flex;
   // margin-top: 30px;
   // justify-content: center;
-  @media screen and (min-width:768px) and (max-width:1199px){
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: flex;
     flex-wrap: wrap;
     margin: -15px;
   }
-  @media screen and (min-width:1200px) {
+  @media screen and (min-width: 1200px) {
     display: flex;
     margin-top: 50px;
   }
 }
 
 .team__item {
-    @media screen and (min-width:0px) and (max-width:767px) {
-      margin-top: 30px;
-    }
-  @media screen and (min-width:768px) and (max-width:1199px) {
-  width:calc((100% - 4 * 15px) / 2);
-  margin: 15px;
+  @media screen and (min-width: 0px) and (max-width: 767px) {
+    margin-top: 30px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
   }
   & + & {
-  @media screen and (min-width:1200px) {
-  margin-left: 30px;
-    
-  }
+    @media screen and (min-width: 1200px) {
+      margin-left: 30px;
+    }
   }
 }
 
 .team__item:nth-child(-n + 2) {
-  @media screen and (min-width:768px) and (max-width:1199px){
-  margin-top: 30px;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-top: 30px;
   }
 }
 
@@ -74,13 +73,14 @@
 
 /* Icon team */
 .team-icon__action {
+  // outline: 1px solid blue;
   display: flex;
   margin: auto;
-  @media screen and (max-width:767px) {
+
+  @media screen and (max-width: 767px) {
     align-items: center;
     justify-content: center;
   }
-  
 }
 
 .team-icon__icon-button {
@@ -107,10 +107,13 @@
 }
 
 .team-icon {
+  // outline: 1px solid green;
   display: flex;
   align-items: center;
-  margin-left: 32px;
-  margin-right: 32px;
+  justify-content: center;
+
+  // margin-left: 32px;
+  // margin-right: 32px;
   margin-top: 16px;
   fill: var(--icon-bck);
 }
