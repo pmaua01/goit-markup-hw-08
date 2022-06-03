@@ -446,7 +446,7 @@ img {
   content: '';
   height: 22px;
   background-color: rgba(33, 33, 33, 0.2);
-  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-left: 2px solid rgba(33, 33, 33, 0.2);
   margin-left: 10px;
 }
 
@@ -490,7 +490,7 @@ img {
   }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 1199px) {
   .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/desktop.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/desktop.jpg);
@@ -500,7 +500,7 @@ img {
   }
 }
 
-@media (min-width: 769px) and (min-device-pixel-ratio: 2), (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 769px) and (min-resolution: 192dpi), (min-width: 769px) and (min-resolution: 2dppx) {
+@media (min-width: 1199px) and (min-device-pixel-ratio: 2), (min-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1199px) and (min-resolution: 192dpi), (min-width: 1199px) and (min-resolution: 2dppx) {
   .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/desktop2x.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/desktop2x.jpg);
@@ -544,7 +544,7 @@ img {
   margin-top: 30px;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .feature__title {
     text-align: left;
   }
@@ -655,7 +655,7 @@ img {
   padding: 40px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
   .modal {
     position: absolute;
     top: 50%;
@@ -899,6 +899,12 @@ img {
   text-align: center;
 }
 
+@media screen and (min-width: 1199px) {
+  .team__title {
+    font-size: 36px;
+  }
+}
+
 .team__name {
   font-weight: 500;
   font-size: 16px;
@@ -1032,6 +1038,12 @@ img {
   letter-spacing: 0.03em;
 }
 
+@media screen and (min-width: 1199px) {
+  .client__title {
+    font-size: 36px;
+  }
+}
+
 .client__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1069,7 +1081,7 @@ img {
 
 .client__icon {
   margin: 15px;
-  width: calc((100% - 60px)/2);
+  width: calc((100% - 60px) / 2);
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {

@@ -5,6 +5,9 @@
 
 .team__title {
   @include fontstyle(700, 28px, 1.7);
+  @media screen and (min-width: 1199px) {
+    font-size: 36px;
+  }
 }
 
 // .section-team .team-title {
