@@ -55,8 +55,6 @@
   text-transform: uppercase;
   color: var(--white-color);
   margin-bottom: 20px;
-
- 
 }
 
 .icon-grey {
@@ -64,58 +62,49 @@
 }
 
 .footer-icon {
-  @media screen and (max-width:1200px) {
-  text-align: center;
+  @media screen and (max-width: 1200px) {
+    text-align: center;
   }
-  
- 
+
   fill: var(--white-color);
-  @media screen and (min-width:1200px) {
-      margin-left: 70px;
+  @media screen and (min-width: 1200px) {
+    margin-left: 70px;
   }
-  @media screen and (min-width:768px) and (max-width:1200px) {
-  
-  /* margin-top: 12px; */
-}
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    /* margin-top: 12px; */
+  }
 }
 
 .footer__container {
-  @media screen and (min-width:768px) and (max-width:1200px){
-  margin: auto;
-  width: 768px;
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    margin: auto;
+    width: 768px;
   }
-@media screen and (min-width:1200px){
-  display: flex;
+  @media screen and (min-width: 1200px) {
+    display: flex;
 
-  align-items: baseline;
+    align-items: baseline;
   }
 }
 
 .footer-top {
-  @media screen and (min-width:768px)  {
+  @media screen and (min-width: 768px) {
     display: flex;
     justify-content: space-around;
     align-items: baseline;
   }
-
 }
 
-
-
 .footer__link {
-  
-  @media screen and (max-width:767px) {
- 
-  margin-bottom: 60px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
   }
-  @media screen and (max-width:1199px){
-  text-align: center;
+  @media screen and (max-width: 1199px) {
+    text-align: center;
   }
-  @media screen and (min-width:768px) and (max-width:1199px){
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     // width: 50%;
-    
   }
-
 }
 
 /* footer signaure */
@@ -123,31 +112,25 @@
 .signature {
   // outline: 1px solid white;
   color: var(--white-color);
-@media screen and (max-width:1200px) {
-  text-align: center;
-}
-  
-  @media screen and (max-width:767px){
+  @media screen and (max-width: 1200px) {
+    text-align: center;
+  }
+
+  @media screen and (max-width: 767px) {
     margin-top: 60px;
   }
-  @media screen and (min-width:768px) and (max-width:1199px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     width: 450px;
     margin-top: 60px;
     margin-left: auto;
     margin-right: auto;
   }
-  
-    
-  
 
-
- @media screen and (min-width:1200px) {
-  display: flex;
-  margin-left: auto;
-  align-items: flex-end;
- }
- 
-  
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin-left: auto;
+    align-items: flex-end;
+  }
 }
 
 .signature__sign {
@@ -159,7 +142,6 @@
   line-height: 1.1;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  
 }
 
 .signature__input {
@@ -184,7 +166,6 @@
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
   }
- 
 }
 
 .button-sign__icon {
@@ -193,14 +174,15 @@
 }
 
 .signature__button {
-  @media screen and (max-width:1199px){
-  margin: auto;
-  margin-top: 20px;
+  @media screen and (max-width: 1199px) {
+    margin: auto;
+    margin-top: 20px;
   }
-  @media screen and (min-width:1200px) {
-   margin-left: 12px;}
+  @media screen and (min-width: 1200px) {
+    margin-left: 12px;
+  }
 }
 
 .footer__logo {
-  color: var(--white-color); 
+  color: var(--white-color);
 }
